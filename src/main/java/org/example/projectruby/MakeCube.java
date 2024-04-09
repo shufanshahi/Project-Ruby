@@ -80,8 +80,52 @@ public class MakeCube {
                 for(int col=0; col<3; col++)
                 {
 
+                    Button button = new Button();
 
+                    if(sides == 0)
+                    {
+                        button = (Button) frontFace.getChildren().get(row*3 + col +1);
 
+                    } else if (sides == 1) {
+                        button = (Button) rightFace.getChildren().get(row*3 + col +1);
+
+                    }
+                    else if (sides == 2) {
+                        button = (Button) backFace.getChildren().get(row*3 + col +1);
+
+                    }
+                    else if (sides == 3) {
+                        button = (Button) leftFace.getChildren().get(row*3 + col +1);
+
+                    }else if (sides == 4) {
+                        button = (Button) upperFace.getChildren().get(row*3 + col +1);
+
+                    }else{
+                        button = (Button) botttomFace.getChildren().get(row*3 + col +1);
+
+                    }
+
+                    if(buttonStates[sides][row][col] == 0)
+                    {
+                        button.setStyle("-fx-background-color: blue;");
+
+                    } else if (buttonStates[sides][row][col] == 1) {
+                        button.setStyle("-fx-background-color: red;");
+
+                    }else if (buttonStates[sides][row][col] == 2) {
+                        button.setStyle("-fx-background-color: green;");
+
+                    }else if (buttonStates[sides][row][col] == 3) {
+                        button.setStyle("-fx-background-color: orange;");
+
+                    }else if (buttonStates[sides][row][col] == 4) {
+                        button.setStyle("-fx-background-color: white;");
+
+                    }else {
+                        button.setStyle("-fx-background-color: yellow;");
+
+                    }
+                    
                 }
             }
         }
