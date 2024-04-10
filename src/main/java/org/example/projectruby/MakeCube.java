@@ -193,6 +193,35 @@ public class MakeCube {
         colorCube();
     }
 
+    public void pressRotateX_Axis()
+    {
+        RotateCube.rotateX_Axis();
+        colorCube();
+    }
+    public void pressRotateX_Axis_Dash()
+    {
+        RotateCube.rotateX_Axis_Dash();
+        colorCube();
+    }
+
+    public void pressRotateY_Axis_Dash()
+    {
+       RotateCube.rotateY_Axis_Dash();
+       colorCube();
+    }
+
+    public void pressRotateY_Axis()
+    {
+        RotateCube.rotateY_Axis();
+        colorCube();
+    }
+
+
+//    public void pressButtonRotate_middle()
+//    {
+//        RotateCube.rotateMiddle_Y_Dash();
+//        colorCube();
+//    }
 
 
 

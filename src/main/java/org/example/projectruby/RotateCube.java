@@ -220,12 +220,119 @@ public class RotateCube {
         antiClockWiseTurn(3);
     }
 
+    public static void rotateMiddle_X_Dash()
+    {
+        int tempColors[][] = new int[4][3];
+
+        for(int sides=0; sides<4; sides++)
+        {
+            for(int col=0; col<3; col++)
+            {
+                tempColors[sides][col] = MakeCube.buttonStates[sides][1][col];
+            }
+        }
+
+        MakeCube.buttonStates[3][1][0] = tempColors[0][0];
+        MakeCube.buttonStates[3][1][1] = tempColors[0][1];
+        MakeCube.buttonStates[3][1][2] = tempColors[0][2];
+
+        for(int sides=2; sides>-1; sides--)
+        {
+            for(int col=0; col<3; col++)
+            {
+                MakeCube.buttonStates[sides][1][col] = tempColors[sides+1][col];
+            }
+        }
+    }
+    public static void rotateMiddle_X()
+    {
+        rotateMiddle_X_Dash();
+        rotateMiddle_X_Dash();
+        rotateMiddle_X_Dash();
+    }
+
+    public static void rotateMiddle_Y()
+    {
+        int tempColors[][] = new int[4][3];
+        tempColors[0][0] = MakeCube.buttonStates[0][0][1];
+        tempColors[0][1] = MakeCube.buttonStates[0][1][1];
+        tempColors[0][2] = MakeCube.buttonStates[0][2][1];
+
+        tempColors[1][0] = MakeCube.buttonStates[5][0][1];
+        tempColors[1][1] = MakeCube.buttonStates[5][1][1];
+        tempColors[1][2] = MakeCube.buttonStates[5][2][1];
+
+        tempColors[2][0] = MakeCube.buttonStates[2][0][1];
+        tempColors[2][1] = MakeCube.buttonStates[2][1][1];
+        tempColors[2][2] = MakeCube.buttonStates[2][2][1];
+
+        tempColors[3][0] = MakeCube.buttonStates[4][0][1];
+        tempColors[3][1] = MakeCube.buttonStates[4][1][1];
+        tempColors[3][2] = MakeCube.buttonStates[4][2][1];
+
+        MakeCube.buttonStates[0][0][1] = tempColors[3][0];
+        MakeCube.buttonStates[0][1][1] = tempColors[3][1];
+        MakeCube.buttonStates[0][2][1] = tempColors[3][2];
+
+        MakeCube.buttonStates[5][0][1] = tempColors[0][0];
+        MakeCube.buttonStates[5][1][1] = tempColors[0][1];
+        MakeCube.buttonStates[5][2][1] = tempColors[0][2];
+
+        MakeCube.buttonStates[2][0][1] = tempColors[1][2];
+        MakeCube.buttonStates[2][1][1] = tempColors[1][1];
+        MakeCube.buttonStates[2][2][1] = tempColors[1][0];
+
+        MakeCube.buttonStates[4][0][1] = tempColors[2][2];
+        MakeCube.buttonStates[4][1][1] = tempColors[2][1];
+        MakeCube.buttonStates[4][2][1] = tempColors[2][0];
+    }
+
+    public static void rotateMiddle_Y_Dash()
+    {
+        rotateMiddle_Y();
+        rotateMiddle_Y();
+        rotateMiddle_Y();
+    }
+
+    public static void rotateX_Axis()
+    {
+        rotateU();
+        rotateMiddle_X();
+        rotateD();
+    }
+
+    public static void rotateX_Axis_Dash()
+    {
+        rotateX_Axis();
+        rotateX_Axis();
+        rotateX_Axis();
+    }
+
+    public static void rotateY_Axis_Dash()
+    {
+        rotateL();
+        rotateMiddle_Y();
+        rotateR();
+    }
+
+    public static void rotateY_Axis()
+    {
+        rotateY_Axis_Dash();
+        rotateY_Axis_Dash();
+        rotateY_Axis_Dash();
+    }
+
+
+
+
     public static void clockWiseTurn(int sides)
     {
         antiClockWiseTurn(sides);
         antiClockWiseTurn(sides);
         antiClockWiseTurn(sides);
     }
+
+
 
     public static void antiClockWiseTurn(int sides)
     {

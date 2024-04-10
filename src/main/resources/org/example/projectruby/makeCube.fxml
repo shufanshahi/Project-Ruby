@@ -85,8 +85,12 @@
       <Button layoutX="38.0" layoutY="107.0" mnemonicParsing="false" onAction="#pressButtonRotateU_Dash" text="Rotate U'" />
       <Button layoutX="39.0" layoutY="175.0" mnemonicParsing="false" onAction="#pressButtonRotateD_Dash" text="Rotate D'" />
       <Button layoutX="39.0" layoutY="208.0" mnemonicParsing="false" onAction="#pressButtonRotateR" text="Rotate R" />
-      <Button layoutX="39.0" layoutY="248.0" mnemonicParsing="false" onAction="#pressButtonRotateR_Dash" text="Rotate R'" />
+      <Button layoutX="38.0" layoutY="248.0" mnemonicParsing="false" onAction="#pressButtonRotateR_Dash" text="Rotate R'" />
       <Button layoutX="40.0" layoutY="280.0" mnemonicParsing="false" onAction="#pressButtonRotateL" text="Rotate L" />
       <Button layoutX="41.0" layoutY="308.0" mnemonicParsing="false" onAction="#pressButtonRotateL_Dash" text="Rotate L'" />
+      <Button layoutX="311.0" layoutY="544.0" mnemonicParsing="false" onAction="#pressRotateX_Axis" text="X+" />
+      <Button layoutX="257.0" layoutY="544.0" mnemonicParsing="false" onAction="#pressRotateX_Axis_Dash" text="X-" />
+      <Button layoutX="640.0" layoutY="341.0" mnemonicParsing="false" onAction="#pressRotateY_Axis_Dash" text="Y-" />
+      <Button layoutX="640.0" layoutY="295.0" mnemonicParsing="false" onAction="#pressRotateY_Axis" text="Y+" />
    </children>
 </AnchorPane>
