@@ -20,10 +20,13 @@ public class MakeCube {
     GridPane backFace;
     @FXML
     GridPane upperFace;
+    @FXML
+    Button colorChangeButton;
 
     public boolean flag = true;
 
     public static int[][][] buttonStates = new int[6][3][3];
+    public static int currentColor = 0;
 
 //    public static int[][][] getButtonStates() {
 //
@@ -65,6 +68,9 @@ public class MakeCube {
                     else{
                         botttomFace.add(button, col, row);
                     }
+                    int rowIndex = row; int colIndex = col; int sideIndex = sides;
+
+                    button.setOnAction(event -> handleButtonClick(rowIndex, colIndex, sideIndex, button));
 
 
 
@@ -73,6 +79,64 @@ public class MakeCube {
         }
 
         colorCube();
+        pressColorChange();
+
+    }
+
+    private void handleButtonClick(int rowIndex, int colIndex,int sideIndex, Button button){
+
+        if(currentColor == 0)
+        {
+            button.setStyle("-fx-background-color: blue;");
+
+        } else if (currentColor == 1) {
+            button.setStyle("-fx-background-color: red;");
+
+        }else if (currentColor == 2) {
+            button.setStyle("-fx-background-color: green;");
+
+        }else if (currentColor == 3) {
+            button.setStyle("-fx-background-color: orange;");
+
+        }else if (currentColor == 4) {
+            button.setStyle("-fx-background-color: white;");
+
+        }else {
+            button.setStyle("-fx-background-color: yellow;");
+
+        }
+
+        buttonStates[sideIndex][rowIndex][colIndex] = currentColor;
+
+    }
+
+    public void pressColorChange()
+    {
+        currentColor = (currentColor+1)%6;
+
+
+        if(currentColor == 0)
+        {
+            colorChangeButton.setStyle("-fx-background-color: blue;");
+
+        } else if (currentColor == 1) {
+            colorChangeButton.setStyle("-fx-background-color: red;");
+
+        }else if (currentColor == 2) {
+            colorChangeButton.setStyle("-fx-background-color: green;");
+
+        }else if (currentColor == 3) {
+            colorChangeButton.setStyle("-fx-background-color: orange;");
+
+        }else if (currentColor == 4) {
+            colorChangeButton.setStyle("-fx-background-color: white;");
+
+        }else {
+            colorChangeButton.setStyle("-fx-background-color: yellow;");
+
+        }
+
+
 
     }
 
