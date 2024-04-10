@@ -80,6 +80,13 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
       </GridPane>
-      <Button layoutX="40.0" layoutY="66.0" mnemonicParsing="false" onAction="#pressButtonRotateU" text="Rotate U" />
+      <Button layoutX="40.0" layoutY="72.0" mnemonicParsing="false" onAction="#pressButtonRotateU" text="Rotate U" />
+      <Button layoutX="39.0" layoutY="141.0" mnemonicParsing="false" onAction="#pressButtonRotateD" text="Rotate D" />
+      <Button layoutX="38.0" layoutY="107.0" mnemonicParsing="false" onAction="#pressButtonRotateU_Dash" text="Rotate U'" />
+      <Button layoutX="39.0" layoutY="175.0" mnemonicParsing="false" onAction="#pressButtonRotateD_Dash" text="Rotate D'" />
+      <Button layoutX="39.0" layoutY="208.0" mnemonicParsing="false" onAction="#pressButtonRotateR" text="Rotate R" />
+      <Button layoutX="39.0" layoutY="248.0" mnemonicParsing="false" onAction="#pressButtonRotateR_Dash" text="Rotate R'" />
+      <Button layoutX="40.0" layoutY="280.0" mnemonicParsing="false" onAction="#pressButtonRotateL" text="Rotate L" />
+      <Button layoutX="41.0" layoutY="308.0" mnemonicParsing="false" onAction="#pressButtonRotateL_Dash" text="Rotate L'" />
    </children>
 </AnchorPane>

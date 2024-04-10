@@ -21,6 +21,8 @@ public class MakeCube {
     @FXML
     GridPane upperFace;
 
+    public boolean flag = true;
+
     public static int[][][] buttonStates = new int[6][3][3];
 
 //    public static int[][][] getButtonStates() {
@@ -40,7 +42,11 @@ public class MakeCube {
                     buttonStates[sides][row][col] = sides;
                     Button button = new Button();
                     button.setPrefSize(50,50);
-                    button.setText("");
+
+                    int num = (row*3 + col);
+                    String buttonNumber = Integer.toString(num);
+                    button.setText(buttonNumber);
+
                     if(sides == 0) {
                         frontFace.add(button, col, row);
                     } else if (sides == 1) {
@@ -133,9 +139,57 @@ public class MakeCube {
 
 
 
+
+
     public void pressButtonRotateU()
     {
+
         RotateCube.rotateU();
+        colorCube();
+    }
+
+    public void pressButtonRotateU_Dash()
+    {
+
+        RotateCube.rotateU_Dash();
+        colorCube();
+    }
+
+    public void pressButtonRotateD()
+    {
+
+
+        RotateCube.rotateD();
+        colorCube();
+    }
+
+    public void pressButtonRotateD_Dash()
+    {
+        RotateCube.rotateD_Dash();
+        colorCube();
+    }
+
+    public void pressButtonRotateR()
+    {
+        RotateCube.rotateR();
+        colorCube();
+    }
+
+    public void pressButtonRotateR_Dash()
+    {
+        RotateCube.rotateR_Dash();
+        colorCube();
+    }
+
+    public void pressButtonRotateL()
+    {
+        RotateCube.rotateL();
+        colorCube();
+    }
+
+    public void pressButtonRotateL_Dash()
+    {
+        RotateCube.rotateL_Dash();
         colorCube();
     }
 
