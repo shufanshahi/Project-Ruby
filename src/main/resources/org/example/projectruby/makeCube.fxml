@@ -93,5 +93,9 @@
       <Button layoutX="640.0" layoutY="341.0" mnemonicParsing="false" onAction="#pressRotateY_Axis_Dash" text="Y-" />
       <Button layoutX="640.0" layoutY="295.0" mnemonicParsing="false" onAction="#pressRotateY_Axis" text="Y+" />
       <Button fx:id="colorChangeButton" layoutX="587.0" layoutY="33.0" mnemonicParsing="false" onAction="#pressColorChange" prefHeight="38.0" prefWidth="66.0" />
+      <Button layoutX="41.0" layoutY="341.0" mnemonicParsing="false" onAction="#pressRotateF" text="Rotate F" />
+      <Button layoutX="41.0" layoutY="381.0" mnemonicParsing="false" onAction="#pressRotateF_Dash" text="Rotate F'" />
+      <Button layoutX="41.0" layoutY="415.0" mnemonicParsing="false" onAction="#pressRotateB" text="Rotate B" />
+      <Button layoutX="41.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressRotateB_Dash" text="Rotate B'" />
    </children>
 </AnchorPane>

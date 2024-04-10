@@ -281,6 +281,30 @@ public class MakeCube {
         colorCube();
     }
 
+    public void pressRotateF()
+    {
+        RotateCube.rotateF();
+        colorCube();
+    }
+
+    public void pressRotateF_Dash()
+    {
+        RotateCube.rotateF_Dash();
+        colorCube();
+    }
+
+    public void pressRotateB()
+    {
+        RotateCube.rotateB();
+        colorCube();
+    }
+
+    public void pressRotateB_Dash()
+    {
+        RotateCube.rotateB_Dash();
+        colorCube();
+    }
+
 
 
 

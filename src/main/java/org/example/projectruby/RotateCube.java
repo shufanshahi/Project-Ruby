@@ -294,6 +294,34 @@ public class RotateCube {
         rotateMiddle_Y();
     }
 
+    public static void rotateF()
+    {
+        rotateY_Axis();
+        rotateU_Dash();
+        rotateY_Axis_Dash();
+    }
+
+    public static void rotateF_Dash()
+    {
+        rotateY_Axis();
+        rotateU();
+        rotateY_Axis_Dash();
+    }
+
+    public static void rotateB()
+    {
+        rotateY_Axis_Dash();
+        rotateU();
+        rotateY_Axis();
+    }
+
+    public static void rotateB_Dash()
+    {
+        rotateY_Axis_Dash();
+        rotateU_Dash();
+        rotateY_Axis();
+    }
+
     public static void rotateX_Axis()
     {
         rotateU();
