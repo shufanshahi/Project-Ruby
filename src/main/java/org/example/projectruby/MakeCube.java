@@ -43,9 +43,10 @@ public class MakeCube {
                     Button button = new Button();
                     button.setPrefSize(50,50);
 
-                    int num = (row*3 + col);
-                    String buttonNumber = Integer.toString(num);
-                    button.setText(buttonNumber);
+//                    int num = (row*3 + col);
+//                    String buttonNumber = Integer.toString(num);
+                    button.setText("");
+//                    button.setStyle("-fx-border-width: 2px");
 
                     if(sides == 0) {
                         frontFace.add(button, col, row);
@@ -217,11 +218,7 @@ public class MakeCube {
     }
 
 
-//    public void pressButtonRotate_middle()
-//    {
-//        RotateCube.rotateMiddle_Y_Dash();
-//        colorCube();
-//    }
+
 
 
 
