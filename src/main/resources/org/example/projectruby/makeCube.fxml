@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Polygon?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projectruby.MakeCube">
    <children>
@@ -97,5 +98,32 @@
       <Button layoutX="41.0" layoutY="381.0" mnemonicParsing="false" onAction="#pressRotateF_Dash" text="Rotate F'" />
       <Button layoutX="41.0" layoutY="415.0" mnemonicParsing="false" onAction="#pressRotateB" text="Rotate B" />
       <Button layoutX="41.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressRotateB_Dash" text="Rotate B'" />
+      <Polygon fx:id="fronPoly1" fill="DODGERBLUE" layoutX="467.0" layoutY="397.0" points="60.1669921875, 115.0, 101.0, 129.5999755859375, 101.0, 80.84417724609375, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="fronPoly4" fill="DODGERBLUE" layoutX="467.0" layoutY="444.0" points="60.1669921875, 106.4000244140625, 101.0, 120.79998779296875, 101.0, 80.84417724609375, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="fronPoly7" fill="DODGERBLUE" layoutX="467.0" layoutY="480.0" points="60.1669921875, 106.4000244140625, 101.0, 120.79998779296875, 101.0, 80.84417724609375, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="fronPoly2" fill="DODGERBLUE" layoutX="508.0" layoutY="412.0" points="60.1669921875, 115.0, 101.0, 129.5999755859375, 101.0, 80.84417724609375, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="fronPoly5" fill="DODGERBLUE" layoutX="508.0" layoutY="459.0" points="60.1669921875, 106.4000244140625, 101.0, 120.79998779296875, 101.0, 80.84417724609375, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="fronPoly8" fill="DODGERBLUE" layoutX="508.0" layoutY="495.0" points="60.1669921875, 106.4000244140625, 101.0, 120.79998779296875, 101.0, 80.84417724609375, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="fronPoly3" fill="DODGERBLUE" layoutX="548.0" layoutY="427.0" points="60.1669921875, 115.0, 101.0, 129.5999755859375, 101.0, 80.84417724609375, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="fronPoly6" fill="DODGERBLUE" layoutX="548.0" layoutY="474.0" points="60.1669921875, 106.4000244140625, 101.0, 120.79998779296875, 101.0, 80.84417724609375, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="fronPoly9" fill="DODGERBLUE" layoutX="548.0" layoutY="510.0" points="60.1669921875, 106.4000244140625, 101.0, 120.79998779296875, 101.0, 80.84417724609375, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="rightPoly1" fill="DODGERBLUE" layoutX="588.0" layoutY="439.0" points="60.1669921875, 115.0, 100.99993896484375, 97.20001220703125, 100.99993896484375, 49.20001220703125, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="rightPoly4" fill="DODGERBLUE" layoutX="588.0" layoutY="486.0" points="60.1669921875, 115.0, 100.99993896484375, 97.20001220703125, 100.99993896484375, 49.20001220703125, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="rightPoly7" fill="DODGERBLUE" layoutX="588.0" layoutY="531.0" points="60.99993896484375, 99.79998779296875, 100.99993896484375, 88.4000244140625, 100.99993896484375, 49.20001220703125, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="rightPoly2" fill="DODGERBLUE" layoutX="629.0" layoutY="427.0" points="60.1669921875, 115.0, 100.99993896484375, 97.20001220703125, 100.99993896484375, 44.20001220703125, 59.99993896484375, 61.20001220703125" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="rightPoly5" fill="DODGERBLUE" layoutX="629.0" layoutY="474.0" points="60.1669921875, 115.0, 100.99993896484375, 97.20001220703125, 100.99993896484375, 49.20001220703125, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="rightPoly8" fill="DODGERBLUE" layoutX="629.0" layoutY="519.0" points="60.99993896484375, 99.79998779296875, 100.99993896484375, 88.4000244140625, 100.99993896484375, 49.20001220703125, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="rightPoly3" fill="DODGERBLUE" layoutX="670.0" layoutY="417.0" points="60.1669921875, 115.0, 100.99993896484375, 97.20001220703125, 100.99993896484375, 31.0, 59.99993896484375, 54.20001220703125" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="rightPoly6" fill="DODGERBLUE" layoutX="670.0" layoutY="464.0" points="60.1669921875, 115.0, 100.99993896484375, 97.20001220703125, 100.99993896484375, 49.20001220703125, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="rightPoly9" fill="DODGERBLUE" layoutX="670.0" layoutY="509.0" points="60.99993896484375, 99.79998779296875, 100.99993896484375, 88.4000244140625, 100.99993896484375, 49.20001220703125, 60.1669921875, 68.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="upperPoly8" fill="DODGERBLUE" layoutX="523.0" layoutY="356.0" points="45.1669921875, 124.0, 85.1669921875, 139.0, 134.5999755859375, 115.5999755859375, 101.0, 98.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="upperPoly5" fill="DODGERBLUE" layoutX="567.0" layoutY="334.0" points="45.1669921875, 124.0, 85.1669921875, 139.0, 134.5999755859375, 115.5999755859375, 101.0, 98.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="upperPoly2" fill="DODGERBLUE" layoutX="611.0" layoutY="314.0" points="45.1669921875, 124.0, 85.1669921875, 139.0, 134.5999755859375, 115.5999755859375, 90.59991455078125, 99.60000610351562" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="upperPoly9" fill="DODGERBLUE" layoutX="555.0" layoutY="374.0" points="45.1669921875, 124.0, 85.1669921875, 139.0, 134.5999755859375, 115.5999755859375, 101.0, 98.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="upperPoly6" fill="DODGERBLUE" layoutX="599.0" layoutY="352.0" points="45.1669921875, 124.0, 85.1669921875, 139.0, 138.60003662109375, 117.5999755859375, 101.0, 98.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="upperPoly3" fill="DODGERBLUE" layoutX="643.0" layoutY="332.0" points="45.1669921875, 124.0, 77.79998779296875, 144.0, 134.5999755859375, 115.5999755859375, 101.0, 98.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="upperPoly7" fill="DODGERBLUE" layoutX="479.0" layoutY="343.0" points="45.1669921875, 124.0, 85.1669921875, 139.0, 134.5999755859375, 115.5999755859375, 101.0, 98.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="upperPoly4" fill="DODGERBLUE" layoutX="523.0" layoutY="321.0" points="45.1669921875, 124.0, 85.1669921875, 139.0, 134.5999755859375, 115.5999755859375, 101.0, 98.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="upperPoly1" fill="DODGERBLUE" layoutX="567.0" layoutY="301.0" points="45.1669921875, 124.0, 85.1669921875, 139.0, 134.5999755859375, 115.5999755859375, 101.0, 98.0" stroke="BLACK" strokeType="INSIDE" />
    </children>
 </AnchorPane>

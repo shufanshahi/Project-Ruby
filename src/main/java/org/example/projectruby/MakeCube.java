@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.scene.Node;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Polygon;
 
 
 public class MakeCube {
@@ -22,6 +24,62 @@ public class MakeCube {
     GridPane upperFace;
     @FXML
     Button colorChangeButton;
+    @FXML
+    Polygon fronPoly1;
+    @FXML
+    Polygon fronPoly2;
+    @FXML
+    Polygon fronPoly3;
+    @FXML
+    Polygon fronPoly4;
+    @FXML
+    Polygon fronPoly5;
+    @FXML
+    Polygon fronPoly6;
+    @FXML
+    Polygon fronPoly7;
+    @FXML
+    Polygon fronPoly8;
+    @FXML
+    Polygon fronPoly9;
+    @FXML
+    Polygon rightPoly1;
+    @FXML
+    Polygon rightPoly2;
+    @FXML
+    Polygon rightPoly3;
+    @FXML
+    Polygon rightPoly4;
+    @FXML
+    Polygon rightPoly5;
+    @FXML
+    Polygon rightPoly6;
+    @FXML
+    Polygon rightPoly7;
+    @FXML
+    Polygon rightPoly8;
+    @FXML
+    Polygon rightPoly9;
+    @FXML
+    Polygon upperPoly1;
+    @FXML
+    Polygon upperPoly2;
+    @FXML
+    Polygon upperPoly3;
+    @FXML
+    Polygon upperPoly4;
+    @FXML
+    Polygon upperPoly5;
+    @FXML
+    Polygon upperPoly6;
+    @FXML
+    Polygon upperPoly7;
+    @FXML
+    Polygon upperPoly8;
+    @FXML
+    Polygon upperPoly9;
+
+
 
     public boolean flag = true;
 
@@ -107,6 +165,7 @@ public class MakeCube {
         }
 
         buttonStates[sideIndex][rowIndex][colIndex] = currentColor;
+        color3DCube();
 
     }
 
@@ -199,6 +258,73 @@ public class MakeCube {
                     
                 }
             }
+        }
+        color3DCube();
+    }
+
+    public void color3DCube()
+    {
+            polycolor(fronPoly1,0,0,0);
+            polycolor(fronPoly2,0,0,1);
+        polycolor(fronPoly3,0,0,2);
+        polycolor(fronPoly4,0,1,0);
+        polycolor(fronPoly5,0,1,1);
+        polycolor(fronPoly6,0,1,2);
+        polycolor(fronPoly7,0,2,0);
+        polycolor(fronPoly8,0,2,1);
+        polycolor(fronPoly9,0,2,2);
+
+
+        polycolor(rightPoly1,1,0,0);
+        polycolor(rightPoly2,1,0,1);
+        polycolor(rightPoly3,1,0,2);
+        polycolor(rightPoly4,1,1,0);
+        polycolor(rightPoly5,1,1,1);
+        polycolor(rightPoly6,1,1,2);
+        polycolor(rightPoly7,1,2,0);
+        polycolor(rightPoly8,1,2,1);
+        polycolor(rightPoly9,1,2,2);
+
+        polycolor(upperPoly1,4,0,0);
+        polycolor(upperPoly2,4,0,1);
+        polycolor(upperPoly3,4,0,2);
+        polycolor(upperPoly4,4,1,0);
+        polycolor(upperPoly5,4,1,1);
+        polycolor(upperPoly6,4,1,2);
+        polycolor(upperPoly7,4,2,0);
+        polycolor(upperPoly8,4,2,1);
+        polycolor(upperPoly9,4,2,2);
+
+
+    }
+
+    public void polycolor(Polygon thepoly, int sides, int row, int col)
+    {
+        if(buttonStates[sides][row][col] == 0)
+        {
+            thepoly.setFill(Color.BLUE);
+//            button.setStyle("-fx-background-color: blue;");
+
+        } else if (buttonStates[sides][row][col] == 1) {
+            thepoly.setFill(Color.RED);
+//            button.setStyle("-fx-background-color: red;");
+
+        }else if (buttonStates[sides][row][col] == 2) {
+            thepoly.setFill(Color.GREEN);
+//            button.setStyle("-fx-background-color: green;");
+
+        }else if (buttonStates[sides][row][col] == 3) {
+            thepoly.setFill(Color.ORANGE);
+//            button.setStyle("-fx-background-color: orange;");
+
+        }else if (buttonStates[sides][row][col] == 4) {
+            thepoly.setFill(Color.WHITE);
+//            button.setStyle("-fx-background-color: white;");
+
+        }else {
+            thepoly.setFill(Color.YELLOW);
+//            button.setStyle("-fx-background-color: yellow;");
+
         }
     }
 
