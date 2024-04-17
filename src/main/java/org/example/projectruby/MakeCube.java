@@ -145,13 +145,13 @@ public class MakeCube {
 
         if(currentColor == 0)
         {
-            button.setStyle("-fx-background-color: blue;");
+            button.setStyle("-fx-background-color: green;");
 
         } else if (currentColor == 1) {
             button.setStyle("-fx-background-color: red;");
 
         }else if (currentColor == 2) {
-            button.setStyle("-fx-background-color: green;");
+            button.setStyle("-fx-background-color: blue;");
 
         }else if (currentColor == 3) {
             button.setStyle("-fx-background-color: orange;");
@@ -176,13 +176,13 @@ public class MakeCube {
 
         if(currentColor == 0)
         {
-            colorChangeButton.setStyle("-fx-background-color: blue;");
+            colorChangeButton.setStyle("-fx-background-color: green;");
 
         } else if (currentColor == 1) {
             colorChangeButton.setStyle("-fx-background-color: red;");
 
         }else if (currentColor == 2) {
-            colorChangeButton.setStyle("-fx-background-color: green;");
+            colorChangeButton.setStyle("-fx-background-color: blue;");
 
         }else if (currentColor == 3) {
             colorChangeButton.setStyle("-fx-background-color: orange;");
@@ -237,13 +237,13 @@ public class MakeCube {
 
                     if(buttonStates[sides][row][col] == 0)
                     {
-                        button.setStyle("-fx-background-color: blue;");
+                        button.setStyle("-fx-background-color: green;");
 
                     } else if (buttonStates[sides][row][col] == 1) {
                         button.setStyle("-fx-background-color: red;");
 
                     }else if (buttonStates[sides][row][col] == 2) {
-                        button.setStyle("-fx-background-color: green;");
+                        button.setStyle("-fx-background-color: blue;");
 
                     }else if (buttonStates[sides][row][col] == 3) {
                         button.setStyle("-fx-background-color: orange;");
@@ -302,16 +302,16 @@ public class MakeCube {
     {
         if(buttonStates[sides][row][col] == 0)
         {
-            thepoly.setFill(Color.BLUE);
-//            button.setStyle("-fx-background-color: blue;");
+            thepoly.setFill(Color.GREEN);
+//            button.setStyle("-fx-background-color: green;");
 
         } else if (buttonStates[sides][row][col] == 1) {
             thepoly.setFill(Color.RED);
 //            button.setStyle("-fx-background-color: red;");
 
         }else if (buttonStates[sides][row][col] == 2) {
-            thepoly.setFill(Color.GREEN);
-//            button.setStyle("-fx-background-color: green;");
+            thepoly.setFill(Color.BLUE);
+//            button.setStyle("-fx-background-color: blue;");
 
         }else if (buttonStates[sides][row][col] == 3) {
             thepoly.setFill(Color.ORANGE);
@@ -332,14 +332,14 @@ public class MakeCube {
 
 
 
-    public void pressButtonRotateU()
+    public void pressButtonRotateU_Dash()
     {
 
         RotateCube.rotateU();
         colorCube();
     }
 
-    public void pressButtonRotateU_Dash()
+    public void pressButtonRotateU()
     {
 
         RotateCube.rotateU_Dash();
@@ -360,13 +360,13 @@ public class MakeCube {
         colorCube();
     }
 
-    public void pressButtonRotateR()
+    public void pressButtonRotateR_Dash()
     {
         RotateCube.rotateR();
         colorCube();
     }
 
-    public void pressButtonRotateR_Dash()
+    public void pressButtonRotateR()
     {
         RotateCube.rotateR_Dash();
         colorCube();
@@ -419,13 +419,13 @@ public class MakeCube {
         colorCube();
     }
 
-    public void pressRotateB()
+    public void pressRotateB_Dash()
     {
         RotateCube.rotateB();
         colorCube();
     }
 
-    public void pressRotateB_Dash()
+    public void pressRotateB()
     {
         RotateCube.rotateB_Dash();
         colorCube();
