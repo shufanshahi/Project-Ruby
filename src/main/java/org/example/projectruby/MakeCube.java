@@ -82,14 +82,9 @@ public class MakeCube {
 
 
     public boolean flag = true;
-
     public static int[][][] buttonStates = new int[6][3][3];
     public static int currentColor = 0;
 
-//    public static int[][][] getButtonStates() {
-//
-//        return buttonStates;
-//    }
 
     @FXML
     void initialize()
@@ -104,10 +99,8 @@ public class MakeCube {
                     Button button = new Button();
                     button.setPrefSize(50,50);
 
-//                    int num = (row*3 + col);
-//                    String buttonNumber = Integer.toString(num);
                     button.setText("");
-//                    button.setStyle("-fx-border-width: 2px");
+
 
                     if(sides == 0) {
                         frontFace.add(button, col, row);
@@ -143,29 +136,8 @@ public class MakeCube {
 
     private void handleButtonClick(int rowIndex, int colIndex,int sideIndex, Button button){
 
-        if(currentColor == 0)
-        {
-            button.setStyle("-fx-background-color: green;");
-
-        } else if (currentColor == 1) {
-            button.setStyle("-fx-background-color: red;");
-
-        }else if (currentColor == 2) {
-            button.setStyle("-fx-background-color: blue;");
-
-        }else if (currentColor == 3) {
-            button.setStyle("-fx-background-color: orange;");
-
-        }else if (currentColor == 4) {
-            button.setStyle("-fx-background-color: white;");
-
-        }else {
-            button.setStyle("-fx-background-color: yellow;");
-
-        }
-
         buttonStates[sideIndex][rowIndex][colIndex] = currentColor;
-        color3DCube();
+        colorCube();
 
     }
 
@@ -303,27 +275,27 @@ public class MakeCube {
         if(buttonStates[sides][row][col] == 0)
         {
             thepoly.setFill(Color.GREEN);
-//            button.setStyle("-fx-background-color: green;");
+
 
         } else if (buttonStates[sides][row][col] == 1) {
             thepoly.setFill(Color.RED);
-//            button.setStyle("-fx-background-color: red;");
+
 
         }else if (buttonStates[sides][row][col] == 2) {
             thepoly.setFill(Color.BLUE);
-//            button.setStyle("-fx-background-color: blue;");
+
 
         }else if (buttonStates[sides][row][col] == 3) {
             thepoly.setFill(Color.ORANGE);
-//            button.setStyle("-fx-background-color: orange;");
+
 
         }else if (buttonStates[sides][row][col] == 4) {
             thepoly.setFill(Color.WHITE);
-//            button.setStyle("-fx-background-color: white;");
+
 
         }else {
             thepoly.setFill(Color.YELLOW);
-//            button.setStyle("-fx-background-color: yellow;");
+
 
         }
     }
