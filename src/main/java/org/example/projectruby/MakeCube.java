@@ -89,6 +89,8 @@ public class MakeCube {
     @FXML
     void initialize()
     {
+
+
         for(int sides = 0; sides<6; sides++)
         {
             for(int row=0; row<3; row++)
@@ -98,7 +100,7 @@ public class MakeCube {
                     buttonStates[sides][row][col] = sides;
                     Button button = new Button();
                     button.setPrefSize(50,50);
-
+//                    button.setStyle("-fx-border-color: black; -fx-border-width: 20px;");
                     button.setText("");
 
 
@@ -148,22 +150,22 @@ public class MakeCube {
 
         if(currentColor == 0)
         {
-            colorChangeButton.setStyle("-fx-background-color: green;");
+            colorChangeButton.setStyle("-fx-background-color: rgb(42, 187, 42);"); // green
 
         } else if (currentColor == 1) {
-            colorChangeButton.setStyle("-fx-background-color: red;");
+            colorChangeButton.setStyle("-fx-background-color: rgb(199, 36, 47);"); // red
 
         }else if (currentColor == 2) {
-            colorChangeButton.setStyle("-fx-background-color: blue;");
+            colorChangeButton.setStyle("-fx-background-color: rgb(53, 121, 222);"); // blue
 
         }else if (currentColor == 3) {
-            colorChangeButton.setStyle("-fx-background-color: orange;");
+            colorChangeButton.setStyle("-fx-background-color: rgb(255, 109, 0);"); // orange
 
         }else if (currentColor == 4) {
-            colorChangeButton.setStyle("-fx-background-color: white;");
+            colorChangeButton.setStyle("-fx-background-color: rgb(255, 255, 255);"); // white
 
         }else {
-            colorChangeButton.setStyle("-fx-background-color: yellow;");
+            colorChangeButton.setStyle("-fx-background-color: rgb(255, 221, 0);"); // yellow
 
         }
 
@@ -209,22 +211,22 @@ public class MakeCube {
 
                     if(buttonStates[sides][row][col] == 0)
                     {
-                        button.setStyle("-fx-background-color: green;");
+                        button.setStyle("-fx-background-color: rgb(42, 187, 42);"); //green
 
                     } else if (buttonStates[sides][row][col] == 1) {
-                        button.setStyle("-fx-background-color: red;");
+                        button.setStyle("-fx-background-color: rgb(199, 36, 47);"); // red
 
                     }else if (buttonStates[sides][row][col] == 2) {
-                        button.setStyle("-fx-background-color: blue;");
+                        button.setStyle("-fx-background-color: rgb(53, 121, 222);"); //blue
 
                     }else if (buttonStates[sides][row][col] == 3) {
-                        button.setStyle("-fx-background-color: orange;");
+                        button.setStyle("-fx-background-color: rgb(255, 109, 0);"); // orange
 
                     }else if (buttonStates[sides][row][col] == 4) {
-                        button.setStyle("-fx-background-color: white;");
+                        button.setStyle("-fx-background-color: rgb(255, 255, 255);"); // white
 
                     }else {
-                        button.setStyle("-fx-background-color: yellow;");
+                        button.setStyle("-fx-background-color: rgb(255, 221, 0);");  //yellow
 
                     }
                     
@@ -274,27 +276,27 @@ public class MakeCube {
     {
         if(buttonStates[sides][row][col] == 0)
         {
-            thepoly.setFill(Color.GREEN);
+            thepoly.setFill(Color.rgb(42, 187, 42)); // green
 
 
         } else if (buttonStates[sides][row][col] == 1) {
-            thepoly.setFill(Color.RED);
+            thepoly.setFill(Color.rgb(199, 36, 47)); // red
 
 
         }else if (buttonStates[sides][row][col] == 2) {
-            thepoly.setFill(Color.BLUE);
+            thepoly.setFill(Color.rgb(53, 121, 222)); // blue
 
 
         }else if (buttonStates[sides][row][col] == 3) {
-            thepoly.setFill(Color.ORANGE);
+            thepoly.setFill(Color.rgb(255, 109, 0)); // orange
 
 
         }else if (buttonStates[sides][row][col] == 4) {
-            thepoly.setFill(Color.WHITE);
+            thepoly.setFill(Color.rgb(255, 255, 255)); // white
 
 
         }else {
-            thepoly.setFill(Color.YELLOW);
+            thepoly.setFill(Color.rgb(255, 221, 0)); // yyellow
 
 
         }
@@ -402,10 +404,5 @@ public class MakeCube {
         RotateCube.rotateB_Dash();
         colorCube();
     }
-
-
-
-
-
 
 }
